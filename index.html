@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=egde">
+        <meta name="viewport" content="width = device-width, initial-scale= 1.0">
+        <title>Kunal portfolio</title>
+        <style>
+
+            
+            
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 5px;
+                height: 50px ;
+                background-color: darkblue;
+                color: white;
+                font-weight: bold;
+                width: 100vw;
+                position: sticky;
+                top: 0;
+            }
+            ul{
+                display: flex;
+                /* justify-content: space-around; */
+                
+                align-items: center;
+            }
+            nav ul li{
+                list-style: none;
+                margin: 0 20px;
+                text-decoration: none;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            nav ul li a:hover{
+                /* text-decoration: none; */
+                color: lightpink;
+                font-size: 20px;
+            }
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-color: black;
+
+            }
+            .left{
+                font-size: 2rem;
+            }
+            .firstsection{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 600px;
+                margin: 80px 0;
+                
+            }
+            .firstsection > div{
+                width: 30%;
+            }
+            .leftsec{
+
+                margin-top: 100px;
+                color: white;
+                font-size: 45px;
+                font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                /* background-color: lawngreen; */
+            }
+            .rightsec{
+                padding-top: 3.5%;
+                border-radius: 1000px;
+                border-width: 50px;
+                border-color: white;
+                color: red;
+            }
+            .photo{
+                height: 400px;
+                border-radius: 200px;
+                border-width: 100px;
+                border-color: white;
+            }
+            .name{
+                color: blueviolet;
+                
+            }
+            main{
+                
+                height: auto;
+                background-color: black;
+            }
+            #element{
+                color: lavender;
+                font-size: inherit;
+                font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                
+            }
+            main hr{
+                height: 1px;
+                border: 0cap;
+                background-color: blue;
+            }
+
+            .secondsection,.thirdsection,.summary,.fourthsection{
+                padding-top: 20px ;
+                height: auto;
+                max-width: 80vw;
+                margin: auto;
+                color: white;
+                font-weight: bold;
+                font-size:  20px;
+                
+            }
+
+            footer{
+                background-color:#271f35;
+                height: 20vh;
+
+            }
+            .footer{
+                /* display: flex; */
+                color:white;
+                margin: 23px 0;
+            }
+            .footer_first{
+                width: 100%;
+                display: flex;
+                /* justify-content: center; */
+                /* align-items: center; */
+            }
+
+            .snapshots{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                
+            }
+
+            
+
+            .profile-icons{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 100px;
+                width: auto;
+            }
+
+            .profile-icons img{
+                height: 60px;
+                width: 60px;
+            }
+
+            a{
+                color: blue;
+            }
+
+            
+
+            .box{
+                /* display: inline-block; */
+                width :450px;
+                border: 2px solid black;
+                
+                margin:10px ;
+                padding: 1rem;
+                height :180px;
+                background-color: white;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            
+            @media(min-width : 1000px){
+                .profile-icons img:hover{
+                    height: 80px;
+                    width: 80px;
+                }
+
+                
+            }
+            
+            @media(max-width : 850px){
+                
+                .rightsec img{
+                    height: 200px;
+                    border-radius: 50px;
+                    border-width: 50px;
+                    border-color: white;
+                }
+
+
+                .profile-icons img{
+                    height: 40px;
+                    width: 40px;
+                }
+
+                .profile-icons img:hover{
+                    height: 50px;
+                    width: 50px;
+                }
+
+                .leftsec{
+                    font-size: 30px;
+                }
+
+
+
+            }
+
+            @media(max-width : 570px){
+                html,nav{
+                    width : 220vw;
+                }
+
+                
+
+                .secondsection,.thirdsection,.fourthsection{
+                    max-width: 180vw;
+                }
+
+                .firstsection{
+                    height: 450px;
+                }
+
+            }
+
+
+           
+
+            .sliding-background{
+                height : 275px;
+                width : 400px;
+                background-image: url('/template/geekvishwa4.jpg');
+                background-size: cover;
+                background-position: center;
+                transition: background-image 0.5 ease;
+            }
+
+            .sliding-background1{
+                height : 275px;
+                width : 400px;
+                background-image: url('/template/ieee1.jpg');
+                background-size: cover;
+                background-position: center;
+                transition: background-image 0.5 ease;
+            }
+
+            .sliding-background2{
+                height : 275px;
+                width : 400px;
+                background-image: url('/template/xtream2.jpg');
+                background-size: cover;
+                background-position: center;
+                transition: background-image 0.5 ease;
+            }
+
+            .sliding-background3{
+                height : 275px;
+                width : 400px;
+                background-image: url('/template/enigma.jpg');
+                background-size: cover;
+                background-position: center;
+                transition: background-image 0.5 ease;
+            }
+
+            .sliding-background4{
+                height : 275px;
+                width : 400px;
+                background-image: url('/template/jspm1.jpg');
+                background-size: cover;
+                background-position: center;
+                transition: background-image 0.5 ease;
+            }
+
+            .event-photos{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .event-photos button{
+                font-size: 50px;
+                background-color: black;
+                color: cornflowerblue;
+                border: none;
+            }
+
+            .experience{
+                display: flex;
+                height: 100px;
+                width: auto;
+                background-color: white;
+                border-radius: 10px;
+                border: 10px solid blueviolet;
+                align-items: center;
+                padding-left: 20px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+            <nav>
+                <div class="left">Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#home">Home</a></li>                
+                        <li><a href="#obj">About</a></li>                   
+                        <li><a href="#skl">Skills</a></li> 
+                        <li><a href="#prj">Projects</a></li>
+                        <li><a href="#courses">Courses</a></li> 
+                        <li><a href="#event">Events</a></li> 
+                        
+                    </ul>
+                </div>
+            </nav>
+            
+            <main>
+                <section class="firstsection" id="home">
+                    <hr>
+                    <div class="leftsec">
+                        Hi, my name is <span class="name">Kunal</span>
+                        <div>And I am a passionate</div>
+                        <div><span id="element"></span></div>
+                        <br>
+                        <br>
+                        <div class="profile-icons">
+                            <a href="https://auth.geeksforgeeks.org/user/kunal22j30b/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"><img src="template/gfg.png"></a>
+                            <a href="https://leetcode.com/Kunal222/"><img src="template/leetcode1.png"></a>
+                            <a href="https://www.linkedin.com/in/kunal-suryawanshi-943827259/"><img src="template/linkdin1.png"></a>
+                            <a href="https://github.com/kunals222"><img src="template/github1.png"></a>
+                        </div>
+                    </div>
+                    <div class="rightsec">
+                        <img class="photo" src="./template/kunal1.jpg" alt="Krishan">
+                    </div>
+                    
+
+                </section>
+                <div id="obj"></div>
+                <br>
+                <br>
+                <hr>
+
+                <section class="summary">
+                    <div class="div" style="color: chartreuse; font-size: xx-large;">Objective</div>
+                    <br>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passionate and dedicated Computer Engineering student with a strong foundation in both hardware and software development.
+                         Proficient in programming languages such as Python, Java, etc with hands-on experience in embedded systems, digital design, and software engineering.
+                          Demonstrates excellent problem-solving skills, a keen interest in cutting-edge technology, and a proven ability to work effectively both independently and with team.
+                         Eager to apply academic knowledge and technical skills to real-world challenges and contribute to innovative projects in a dynamic environment.
+                         
+                    </div>
+                    
+                </section>
+
+                <br>
+                <br>
+                
+                <br>
+                <section class="secondsection">
+                        <span class="gray" style="color: gray; font-size: small;">What I done so far</span>
+                        <div class="div" style="color: chartreuse;">Work Experience</div>
+                        <br>
+                        <br>
+                
+                        <br>
+                        
+                        <div class="experience">
+                            <div style="color: darkblue; font-size: larger; font-weight: bold;">Fresher</div>
+                            <video height= "100" width = "100" style="border: none; "autoplay muted loop>
+                            <source src="/template/walkig_man.mp4">
+                            </video>
+                            
+                        </div>
+                </section>
+
+                <div id="skl"></div>
+
+                <br>
+                <br>
+                
+                <br>
+
+                
+                <section class="thirdsection">
+
+                    <div  class="div" style="color: chartreuse; font-size: x-large;">Skills</div>
+                    <br>
+                    <div style="margin-left: 10px;">Soft Skills : </div>
+                    <br>
+
+                    <ol style="margin-left: 50px;">
+                        <li>Communication</li>
+                        <li>Presentation</li>
+                        <li>Team work</li>
+                        <li>Time Management</li>
+                        <li>Problem Solving</li>
+                        <li>Continuous Learning and adaptible</li>
+                        <li>Stress Management</li>
+
+                    </ol>
+                    <br>
+
+                    <div style="margin-left: 10px;">Technical Skills : </div>
+                    <br>
+                    
+                    <ol style="margin-left: 50px;">
+                        <li><a></a></li>
+                        
+                        <li>Java</li>
+                        <li>Basics of C</li>
+                        <li>Basics of C++</li>
+                        <li>Python</li>
+                        <li>Django and Flask</li>
+                        <li>HTML ,CSS, JAVASCRIPT</li>
+                        <li>Nodejs</li>
+                        <li>SQL and MongoDB</li>
+                        <li>Operating system</li>
+                    </ol>
+                    <div id="courses"></div>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <div class="div" style="color: chartreuse; font-size: x-large;">Certification courses</div>
+                    <br>
+
+                    <ol style="margin-left: 50px;">
+                        <li><a href="https://drive.google.com/file/d/1ZbH9c__jpixmRHGfCF8yUCEyZonf3WA2/view?usp=drive_link">Data Structure and algorithm through infosys</a></li>
+                        <li><a href="https://drive.google.com/file/d/1LvTvxebo3Oq_PVgeiLjM46uMqVkvDlFN/view?usp=drive_link">Basics of java through Hackerrank</a></li>
+                        <li><a href="https://drive.google.com/file/d/16w1wf1vtHghhx9mc3Hl3dxo-IKISVQ7k/view?usp=drive_link">Java Through infosys</a></li>
+                        <li><a href="https://drive.google.com/file/d/1KSLlYoJcMBL267fLUWVtLalLeZn6qA95/view?usp=drive_link">Basics of python through Hackerrank</a></li>
+                        <li><a href="https://drive.google.com/file/d/1B7M6txxlJmfTvYENL-Fkcb_grKoehuwi/view?usp=drive_link">Python through infosys</a></li>
+                        <li><a href="https://drive.google.com/file/d/1JcVJTXHlYTCQ7SPw8yD35DKZKH4rI_Rs/view?usp=drive_link">web development 7 days bootcamp through devtown</a></li>
+                        <li><a href="https://drive.google.com/file/d/1NSPF-9Bc4fqCQS9waC3vWuLTtHBx18DF/view?usp=drive_link">soft skills through infosys</a></li>
+                        
+                    </ol>
+
+                    <div id="prj"></div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="div" style="color: chartreuse; font-size: x-large;">Web Project</div>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Hospital Management System</span></div>
+                    <br>
+                    
+                    <p> I used flask a python frame work, sql , bootstrap , jinja templates to develop this website.
+                        This website provides online bed booking services. there are three user types who can login in the website.
+                        patient : <br>
+                        Patient can sign in the website by adding there adhar no. , email , password.
+                        He can check the available beds from different hospital and the plans of medicliam and according to that he book the bed.
+                        for bedbooking services the patient have to fill the all needed information.
+                        By booking the bed he can see that which doctor is assign to him<br>
+                        Doctor :<br>
+                        Doctors are automaticaly assign to patient by there availablility criteria.
+                        Doctors after normalize the patient health give the request for the discharge of patient.
+                        Doctors are added by Hospital so there is no sign in page. <br>
+                        Hospital :<br>
+                        Hospital user Can see the patient admitted in the hospital.
+                        After the payment process completed the hospital user fill the discharge form where billing information also added.
+                        In Hospital user page, user can see the analysis of last week through graph.
+                        Hospital user have to add the Hospital information and available beds data on the website.
+                        Hospital are added by admin so there is no sign in page
+
+
+
+                    </p>
+                    <br>
+                    <div class="snapshots">
+                        <div class="box" style="background-image: url(template/h1.png);"></div>
+                        <div class="box" style="background-image: url(template/h2.png);"></div>
+                        <div class="box" style="background-image: url(template/h3.png);"></div>
+                        <div class="box" style="background-image: url(template/h4.png);"></div>
+                        <div class="box" style="background-image: url(template/h5.png);"></div>
+                        <div class="box" style="background-image: url(template/h6.png);"></div>
+                        <div class="box" style="background-image: url(template/h7.png);"></div>
+                        <div class="box" style="background-image: url(template/h8.png);"></div>
+                        
+                    </div>
+                    <div id="labour"></div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Labour Employement System</span></div>
+                    <br>
+                    
+                    <p>The website had done in team work. The teammates are Aditya Gaikwad , Aaditya Hasbanis, Akhilesh Talekar.
+                        We used HTML , CSS , javascript for frontent of website and for backent django a python framework we used.
+                        Through this website one can login and serach the various service providers who are present in the website.
+                        And according to users need they can get all the providers data of specific service. And on the other hand,
+                        For service providers , they can login and fill all needed information about them. For checking the knowledge
+                        of providers about there services we provide a quiz about the service . With the services , we provide a various products
+                        thorough website.
+                    </p>
+                    <br>
+                    <div class="snapshots">
+                        <div class="box" style="background-image: url(template/l1.png);"></div>
+                        <div class="box" style="background-image: url(template/l2.png);"></div>
+                        <div class="box" style="background-image: url(template/l3.png);"></div>
+                        <div class="box" style="background-image: url(template/l4.png);"></div>
+                        <div class="box" style="background-image: url(template/l5.png);"></div>
+                        <div class="box" style="background-image: url(template/l6.png);"></div>
+                        <div class="box" style="background-image: url(template/l7.png);"></div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Spotify clone</span></div>
+                    <br>
+                    <a href="https://kunals222.github.io/Spotify/">Click here to see</a>
+                    <br>
+                    <br>
+                    
+                    <p>I used HTML, CSS, JAVASCRIPT to develop this website. It is a static website.
+                        I gave it 5 songs which I have in my desktop and perform operations like play , pause  
+                        through javascript. javascript has built in fuction for audio elements like element.play() , element.pause() etc.
+                        I am trying to make it responsive for mobiles as well</p>
+                    <br>
+
+                    <div class="snapshots">
+                        <div class="box" style="background-image: url(template/spotify1.png);"></div>
+                        <div class="box" style="background-image: url(template/spotify2.png);"></div>
+                        
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Calculator</span></div>
+                    <br>
+                    <a href="https://kunals222.github.io/Calculator/">Click here to see</a>
+                    <br>
+                    <br>
+                    
+                    <p>I used HTML, CSS, javascript for designing the calculator. I used eval function to calculate the expression which is in string.
+                        I am trying to make it responsive like if the length of the answer is increase try to escape from calculator then the size of the answer decreases.
+                        I gave the basic calculator functionalities to it.  </p>
+                    <br>
+                    <div class="snapshots">
+                        <div class="box" style="background-image: url(template/cal3.png); width:100px; height : 220px;"></div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Amazon clone</span></div>
+                    <br>
+                    
+                    <p>I used HTML,CSS to design the clone of amazon through that I developed my knowledge of web design. I used flex property to evenly specified the position pf products</p>
+                    <br>
+                    <div class="snapshots">
+                        <div class="box" style="background-image: url(template/amazon1.png);"></div>
+                        <div class="box" style="background-image: url(template/amazon2.png);"></div>
+                        <div class="box" style="background-image: url(template/amazon3.png);"></div>
+                        
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    
+
+                    <div class="div" style="color: chartreuse; font-size: x-large;">python Project</div>
+                    <br>
+                    
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Desktop assistant using python</span></div>
+                    <br>
+                    <p>Desktop assistant can perform work like open any site , play any songs , interact with user , Telling latest news , time. Basicaly I used the API of openAI and news so that it can intaract with human being efficiently
+                         and provide updated news. I used speech_recognition for accepting input from user in voice format. webbrowser library to opening the site.
+                          And used win32com.client for speaking</p>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="event"></div>
+                    <br>
+                    <br>
+
+                    
+                </section> 
+
+
+                <section class="fourthsection">
+                    <div class="div" style="color: chartreuse; font-size: xx-large;">Events</div>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Participating in Geekvishwa Competition</span></div>
+                    <br>
+                    <p>The Competition conducted by GFG viit Pune . In this Competition My team name was <span style="color: lime;">TechMaster</span> and members were I , Aditya Gaikwad , Aadity Hasbanis , Akhilesh Talekar .
+                         We were develop a website in which Labour can serve and customer can take service . <a href="#labour">see for more</a></p>
+                    <br>
+                    <br>
+
+                    <div class="event-photos">
+
+                    <button onclick="showPreImg()"> << </button>
+
+                    <div class="sliding-background" id="slidingBackground"></div>
+                    
+                    <button onclick="showNxtImg()"> >> </button>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Teaching Applications of IOT to childrens</span></div>
+                    <br>
+                    <p>The two-day IoT workshop organized by the IEEE VIIT Student Branch at 
+                        MES English Medium School in Shirwal on January 23rd and 24th was a 
+                        resounding success, engaging students from classes 5th to 9th. The workshop 
+                        focused on providing them with hands-on experience with IoT projects 
+                        featuring sensors, Arduino boards, and online simulation tools such as 
+                        TinkerCAD. They gained an understanding of the concept of IoT, exploring 
+                        how everyday objects can be connected to the internet to collect and exchange 
+                        data.
+                        The workshop highlighted various applications of IoT across different 
+                        industries, showcasing how this technology is transforming sectors such as 
+                        healthcare, agriculture, smart cities, and more. The projects not only reinforced 
+                        theoretical concepts but also empowered the kids to experience the outcomes 
+                        of their learning. By the end of the workshop, the students provided insightful 
+                        inputs on the real-life applications of the projects they worked on, showcasing 
+                        their understanding of IoT's practical implications. The event, organized by 
+                        IEEE, aimed to inspire and prepare young minds for the evolving landscape of 
+                        IoT technology. The workshop's success was marked by the active participation 
+                        of IEEE members, recognizing the significance of this learning opportunity for 
+                        both academic and professional growth.</p>
+
+                    
+                    <br>
+                    <br>
+                    <div class="event-photos">
+
+                    <button onclick="showPreImg1()"> << </button>
+    
+                    <div class="sliding-background1" id="slidingBackground1"></div>
+                        
+                    <button onclick="showNxtImg1()"> >> </button>
+    
+                    </div>
+                    <br>
+                    <br>
+
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Participating in Xtream</span></div>
+                    <br>
+                    <p>It was a International Hackathon held on 29th Nov 2023 . It was 24hr Hackathon start from 5AM to 4.59AM in online mode in which My team was participated. 
+                        My team was<span style="color: lime;"> IndianTechMaster </span>and My teamMate was Suraj Khod . In this Hackathon , every hour 1 new question was displayed . Through this Hackathon
+                        I gained lot a experience and knowledge of DSA . near 17000 programmers over the world are participated in this Hackathon . In this Hackathon , we secured 2300 rank .</p>
+                    <br>
+                    <br>
+
+                    
+                    <div class="event-photos">
+
+                    <button onclick="showPreImg2()"> << </button>
+
+                    <div class="sliding-background2" id="slidingBackground2"></div>
+                        
+                    <button onclick="showNxtImg2()"> >> </button>
+    
+                    </div>
+                    <br>
+                    <br>
+
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Participating in Enigma</span></div>
+                    <br>
+                    <p>It was Hackathon held by College club . In this My team <span style="color: lime;"> Synatax Soldier </span>  participated . 
+                        My team mates were Rushikesh Ghodake and Aditya Gaikwad . 
+                        It had three rounds. In which , first round we secured 5th rank , second 3rd and in third again 5th rank.
+                    </p>
+                    <br>
+                    <br>
+
+                    
+                    <div class="event-photos">
+
+                    <button onclick="showPreImg3()"> << </button>
+
+                    <div class="sliding-background3" id="slidingBackground3"></div>
+                        
+                    <button onclick="showNxtImg3()"> >> </button>
+    
+                    </div>
+                    <br>
+                    <br>
+
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Participating in Innovision</span></div>
+                    <br>
+                    <p>It was Hackathon held by JSPM college . It was 2 days Hackathon . In this My team <span style="color: lime;"> Synatax Soldier </span> had I , 
+                        Aditya Gaikwad , Rushikesh Ghodake and Viraj Zuluk .
+                        But to qualify for the round we gave a online coding test and we qualified . 
+                        We went JSPM , In first day We secure 5th rank and in second day we secure 4th rank in Competition.
+                         
+                        
+                    </p>
+                    <br>
+                    <br>
+
+                    
+                    <div class="event-photos">
+
+                    <button onclick="showPreImg4()"> << </button>
+    
+                    <div class="sliding-background4" id="slidingBackground4"></div>
+                        
+                    <button onclick="showNxtImg4()"> >> </button>
+    
+                    </div>
+                    <br>
+                    <br>
+
+                    
+                </section>
+
+                
+                
+                
+                
+            </main>
+            
+        
+        
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+
+    const imgs = ['/template/geekvishwa4.jpg' , '/template/geekvishwa3.jpg' , '/template/geekvishwa2.jpg' , '/template/geekvishwa1.jpg'];
+    const imgs1 = ['/template/ieee1.jpg' , '/template/ieee2.jpg' , '/template/ieee3.jpg' , '/template/ieee4.jpg'];
+    const imgs2 = ['/template/xtream2.jpg' , '/template/xtream1.jpg'];
+    const imgs3 = ['/template/enigma.jpg'];
+    const imgs4 = ['/template/jspm1.jpg' , '/template/jspm3.jpg' , '/template/jspm2.jpg' , '/template/jspm4.jpg'];
+
+    const sizeh2 = [275,285];
+    const sizew2 = [400,1000];
+    let current  = 0;
+    let current1 = 0;
+    let current2 = 0;
+    let current3 = 0;
+    let current4 = 0;
+
+    function showNxtImg(){
+        current = current+1;
+        current = current%imgs.length;
+        document.getElementById('slidingBackground').style.backgroundImage = `url(${imgs[current]})`;
+    }
+
+    function showNxtImg1(){
+        current1 = current1+1;
+        current1 = current1%imgs1.length;
+        document.getElementById('slidingBackground1').style.backgroundImage = `url(${imgs1[current1]})`;
+    }
+
+    function showNxtImg2(){
+        current2 = current2+1;
+        current2 = current2%imgs2.length;
+        if(window.innerHeight > 1298){
+            if(current2 == 1){
+                current2 = current2+1;
+                current2 = current2%imgs2.length;
+            }
+        }
+        document.getElementById('slidingBackground2').style.backgroundImage = `url(${imgs2[current2]})`;
+        document.getElementById('slidingBackground2').style.height = `${sizeh2[current2]}px`;
+        document.getElementById('slidingBackground2').style.width = `${sizew2[current2]}px`;
+
+        
+        
+    }
+
+    function showNxtImg3(){
+        current3 = current3+1;
+        current3 = current3%imgs3.length;
+        document.getElementById('slidingBackground3').style.backgroundImage = `url(${imgs3[current3]})`;
+        
+    }
+
+    function showNxtImg4(){
+        current4 = current4+1;
+        current4 = current4%imgs4.length;
+        document.getElementById('slidingBackground4').style.backgroundImage = `url(${imgs4[current4]})`;
+    }
+
+
+
+
+
+
+
+
+    function showPreImg(){
+        if(current == 0){
+            current = imgs.length-1;
+        }else{
+            current = current-1;
+        }
+        document.getElementById('slidingBackground').style.backgroundImage = `url(${imgs[current]})`;
+    }
+
+    function showPreImg1(){
+        if(current1 == 0){
+            current1 = imgs1.length-1;
+        }else{
+            current1 = current1-1;
+        }
+        document.getElementById('slidingBackground1').style.backgroundImage = `url(${imgs1[current1]})`;
+    }
+
+    function showPreImg2(){
+        if(current2 == 0){
+            current2 = imgs2.length-1;
+        }else{
+            current2 = current2-1;
+        }
+        document.getElementById('slidingBackground2').style.backgroundImage = `url(${imgs2[current2]})`;
+        document.getElementById('slidingBackground2').style.height = `${sizeh2[current2]}px`;
+        document.getElementById('slidingBackground2').style.width = `${sizew2[current2]}px`;
+        console.log(`${sizew2[current2]}px`);
+    }
+
+    function showPreImg3(){
+        if(current3 == 0){
+            current3 = imgs3.length-1;
+        }else{
+            current3 = current3-1;
+        }
+        document.getElementById('slidingBackground3').style.backgroundImage = `url(${imgs3[current3]})`;
+        
+    }
+
+    function showPreImg4(){
+        if(current4 == 0){
+            current4 = imgs4.length-1;
+        }else{
+            current4 = current4-1;
+        }
+        document.getElementById('slidingBackground4').style.backgroundImage = `url(${imgs4[current4]})`;
+    }
+
+
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Problem Solver','Programmer'],
+      typeSpeed: 50,
+    });
+
+    
+  </script>
+ 
+    </body>
+</html>
