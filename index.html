@@ -123,7 +123,7 @@
                 background-color: blue;
             }
 
-            .secondsection,.thirdsection,.summary,.fourthsection{
+            .secondsection,.thirdsection,.summary,.fourthsection,.fifthsection{
                 padding-top: 20px ;
                 height: auto;
                 max-width: 80vw;
@@ -412,7 +412,7 @@
             }
             
             .mobile-nav div{
-                padding: 10% 0;
+                padding: 7% 0;
             }
             .mobile-nav div a{
                 color: aliceblue;
@@ -444,6 +444,7 @@
                         <li><a href="#prj">Projects</a></li>
                         <li><a href="#courses">Courses</a></li> 
                         <li><a href="#event">Events</a></li> 
+                        <li><a href="#papers">Papers</a></li> 
                         
                     </ul>
                     
@@ -463,6 +464,7 @@
                 <div><a href="#prj" onclick="mobileVeiwNavbar()">Projects</a></div>
                 <div><a href="#courses" onclick="mobileVeiwNavbar()">Courses</a></div> 
                 <div><a href="#event" onclick="mobileVeiwNavbar()">Events</a></div> 
+                <div><a href="#papers" onclick="mobileVeiwNavbar()">Papers</a></div> 
                     
                 
             </div>
@@ -474,10 +476,10 @@
                         <img class="photo" src="./template/kunal1.jpg" alt="Krishan">
                     </div>
                     <div></div>
-                    <div class="leftsec">
-                        <section class="text-about">
-                            Hi, my name is <span class="name">Kunal</span>
-                            <div>And I am a passionate </div>
+                    <div class="leftsec" >
+                        <section class="text-about" >
+                            I am <span class="name">Kunal Suryawanshi</span>
+                            <div>I have a deep passion for</div>
                             <div><span id="element"></span></div>
                         </section>
                         <br>
@@ -902,15 +904,35 @@
                     <button onclick="showNxtImg4()"> >> </button>
     
                     </div>
+                    <div id="papers"></div>
                     <br>
                     <br>
-
+                    
                     
                 </section>
+                
+                <section class="fifthsection">
+                    <div class="div" style="color: chartreuse; font-size: xx-large;">Published Papers</div>
+                    <br>
+                    <div><span class="gray" style="color: darkturquoise; font-size: 20px;">Automation of Clinical Health Management System</span></div>
+                    <br>
+                    <a href="https://www.researchgate.net/publication/378774768_Automation_of_Clinical_Health_Management_System">Click here to see</a>
+                    <br>
+                    <br>
+                    <div>
+                    <p>As in recent days' Viral diseases spreading very rapidly like Eye-flue (Eye deceases) also the diseases like skin cancer become a big threat.
+                         So, it is big challenge for technologies to detect that quickly and it will help to our health management system to remove that viruses 
+                         rapidly before spreading. In that case there are more advance and more accurate variety of technologies like "Genetic Test, Imaging Scans". 
+                         But these types of technologies facing more challenges towards the accuracy. To improve that accuracy and to detect that more accurately, 
+                         further more research is required. In that case to detect that, Convolutional Neural Networks and with the help of comparative study of 
+                         existing medical database related to both skin cancer and eye-diseases and all that diseases which hard to detect, can detect quickly.
+                          As a result of that algorithm the accuracy of detection will increase.
+                    </p>
+                    </div>
+                    <br>
+                    <br>
 
-                
-                
-                
+                </section>                
                 
             </main>
             
@@ -925,7 +947,7 @@
         
 
         const check = () =>{
-            for (let i = 10; i < elements.length; i++) {
+            for (let i = 11; i < elements.length; i++) {
                 
                 const element = elements[i];
                 const rect = element.getBoundingClientRect();
@@ -1194,7 +1216,7 @@
 
 
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Problem Solver','Programmer','AI Developer','Java Developer','Data analyst'],
+      strings: ['Web Developer', 'Problem Solver','Programmer','AI Developer','Java Developer'],
       typeSpeed: 50,
     });
 
